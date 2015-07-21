@@ -1,4 +1,4 @@
-FUNCTION IsTypeFloatSingle, v
+FUNCTION IsTypeFloatDouble, v
 
     CASE Size(v, /TYPE) OF
         5: RETURN, 1

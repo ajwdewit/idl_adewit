@@ -93,6 +93,11 @@ PRO Cgi_Process_Manager, tasks, LOG_FILE=log_file, USE_ENVI=use_envi
         Print, "Process manager exit with failures, see log for details."
         RETURN
     ENDIF
+    
+    IF N_Elements(tasks) EQ 0 THEN BEGIN
+      Print, "No tasks provided to cgi_process_manager!"
+      RETURN
+    ENDIF
 
     ; Define empty placeholders for objects
     logger = Obj_New()

@@ -42,7 +42,6 @@ PRO run_process_example, A, task_id
                          TITLE = ('Running task ' + StrCompress(task_id , /REMOVE_ALL)))
    t = 0UL
    FOR i=0UL, A DO BEGIN
-     wait, 0.1
      t += i
      if (i mod 1000) EQ 0  THEN progressBar -> Update, (i/Float(A))*100
    ENDFOR
