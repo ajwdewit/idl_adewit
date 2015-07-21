@@ -35,15 +35,15 @@
 ;-
 COMPILE_OPT IDL2, STRICTARRSUBS
 
-PRO run_process_example, A, task_id
+PRO run_process_example, var1, task_id
    
    ;Message, "Error raised on purpose!"
    progressbar = Obj_New("PROGRESSBAR", /FAST_LOOP, /NOCANCEL, /START, XSIZE=200, $
                          TITLE = ('Running task ' + StrCompress(task_id , /REMOVE_ALL)))
    t = 0UL
-   FOR i=0UL, A DO BEGIN
+   FOR i=0UL, var1 DO BEGIN
      t += i
-     if (i mod 1000) EQ 0  THEN progressBar -> Update, (i/Float(A))*100
+     if (i mod 1000) EQ 0  THEN progressBar -> Update, (i/Float(var1))*100
    ENDFOR
    print, "Finished task:, ",task_id, " Result = ", t
    progressBar -> Destroy
