@@ -68,7 +68,7 @@
 ;                                          logging added)
 ;
 ; LICENSE:
-;   This software is made available under the GPL. See http://www.gnu.org/licenses/gpl.html
+;   This software is made available under the European Union Public License (EUPL), see LICENSE file
 ;-
 
 PRO cgi_hants, ev, freqs=freqs, _EXTRA=extra, data_if=data_if, mask_if=mask_if, $

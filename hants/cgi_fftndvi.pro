@@ -58,7 +58,7 @@
 ;   Modified by: Allard de Wit, May 2005 (Now returns correct FFT coefficients)
 ;
 ; LICENSE: 
-;   This software is made available under the GPL. See http://www.gnu.org/licenses/gpl.html
+;   This software is made available under the European Union Public License (EUPL), see LICENSE file
 ;-
 
 FUNCTION cgi_fftndvi, data, fet=fet, freqs=freqs, range=range, plot=plot, $

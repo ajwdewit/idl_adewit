@@ -23,8 +23,7 @@ COMPILE_OPT IDL2, STRICTARRSUBS
 ;   Written by:  Allard de Wit, October 2010
 ;
 ; LICENSE:
-;   This software is licensed under the GPL. 
-;   See http://www.gnu.org/licenses/gpl.html
+;   This software is licensed under the EUPL, see license file. 
 ;-
 ;------------------------------------------------------------------------------
 

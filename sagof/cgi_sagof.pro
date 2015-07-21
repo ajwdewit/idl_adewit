@@ -26,7 +26,7 @@
 ;   Written by:  Allard de Wit, November 2004
 ;
 ; LICENSE: 
-;   This software is made available under the GPL. See http://www.gnu.org/licenses/gpl.html
+;   This software is made available under the European Union Public License (EUPL), see LICENSE file
 ;-
 
 PRO CGI_SAGOF

@@ -36,7 +36,7 @@
 ;   Written by:  Allard de Wit, January 2008
 ;
 ; LICENSE:
-;   This software is made available under the GPL. See http://www.gnu.org/licenses/gpl.html
+;   This software is made available under the European Union Public License (EUPL), see LICENSE file
 ;-
 FUNCTION cgi_map_bitwise_flag, statusmap, bitposition
   return, BYTE((statusmap AND (2UL^bitposition))/(2UL^bitposition))

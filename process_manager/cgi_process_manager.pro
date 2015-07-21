@@ -11,7 +11,7 @@
 ;   Process management/parallel processing
 ;
 ; CALLING SEQUENCE:
-;   CGI_PROCESS_MANAGER, tasks
+;   CGI_PROCESS_MANAGER, tasks, LOG_FILE=<log file name>, /USE_ENVI
 ;
 ; INPUTS:
 ;      tasks: Array of structures which defines for each task the parameters
@@ -23,6 +23,7 @@
 ;
 ;   Other Keywords (OPTIONAL):"
 ;     LOG_FILE: (full path to) Filename used to write the log to."
+;     USE_ENVI: Set switch to initialize ENVI on the IDL_IDLBridge
 ;
 ; SIDE EFFECTS:
 ;   Needs the cgi_logger__define object from the CGI IDL library
@@ -36,9 +37,13 @@
 ;
 ; MODIFICATION HISTORY:
 ;   Written by:  Allard de Wit, January 2008
+;   Updated July 2014:
+;   - added a few checks
+;   - updated the documentation in the header.
+;   - Updated the license, now EUPL instead of GPL
 ;
 ; LICENSE:
-;   This software is made available under the GPL. See http://www.gnu.org/licenses/gpl.html
+;   This software is made available under the European Union Public License (EUPL), see LICENSE file
 ;-
 COMPILE_OPT IDL2, STRICTARRSUBS
 
